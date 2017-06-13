@@ -3,12 +3,111 @@
   padding: 0;
   box-sizing: border-box; }
 
-h1 {
+* {
+  font-family: Open Sans; }
+
+#logo {
   font-family: 'Lora';
   font-weight: lighter; }
 
+h1 {
+  font-family: 'Lora';
+  font-weight: lighter;
+  text-transform: uppercase; }
+
 h2 {
-  font-family: 'Fjalla One'; }
+  font-family: 'Fjalla One';
+  text-transform: uppercase; }
+
+h3 {
+  font-family: 'Fjalla One';
+  text-transform: uppercase;
+  letter-spacing: 6px; }
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px; }
+
+.navbar ul li {
+  align-items: baseline; }
+
+.empty {
+  background-image: url("../img/btn-navarrow.png"); }
+
+#play-border {
+  width: 220px;
+  height: 5px;
+  background: white;
+  margin-bottom: 25px; }
+
+.play {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 2s, 0.2s; }
+
+.play:hover {
+  transform: scale(1.25);
+  z-index: 1; }
+
+#arrow {
+  height: 40px;
+  width: 40px;
+  margin-left: 5px; }
+
+.button button {
+  height: 90px;
+  width: 180px;
+  padding: 20px;
+  background: #dc7725;
+  font-size: 6px;
+  color: white;
+  border: none;
+  border-radius: 10px; }
+
+.button {
+  height: 100px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/btn-viewmoredown.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 7px;
+  margin-bottom: 20px; }
+
+.neck {
+  height: 75px;
+  background-image: url("../img/bg-categorynav.jpg");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: #bdbdb7; }
+  .neck ul {
+    display: flex;
+    flex-direction: row;
+    width: 400px; }
+    .neck ul li {
+      margin-right: 25px; }
+      .neck ul li:nth-of-type(5) {
+        padding-left: 25px;
+        border-left: .5px solid #bdbdb7;
+        color: #dc7725; }
+
+.search {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -34,14 +133,6 @@ h2 {
   justify-content: space-between;
   align-items: center; }
 
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between; }
-
-.navbar ul li {
-  align-items: baseline; }
-
 #duck {
   height: 50px;
   width: 50px; }
@@ -55,26 +146,78 @@ li {
   flex-flow: column wrap;
   align-items: center; }
   .title-card h1 {
-    font-size: 150px; }
+    font-size: 130px; }
 
-#play-border {
-  width: 220px;
-  height: 5px;
-  background: white;
-  margin-bottom: 25px; }
-
-.play {
-  background-color: rgba(255, 255, 255, 0.4);
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+.service-gallery {
+  width: 100%;
+  height: 800px;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  flex-wrap: wrap; }
 
-#arrow {
-  height: 40px;
-  width: 40px;
-  margin-left: 5px; }
+.gallery {
+  position: relative;
+  height: 400px;
+  width: 200px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-basis: 2;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  color: white; }
+  .gallery h2 {
+    align-self: flex-start;
+    position: absolute;
+    bottom: 30px;
+    left: 30px; }
+  .gallery span {
+    align-self: flex-start;
+    position: absolute;
+    bottom: 65px;
+    left: 30px;
+    height: 5px;
+    background-color: #dc7725;
+    width: 30px; }
+
+.raft {
+  background-image: url("../img/home-raft.jpg");
+  flex-basis: 50%; }
+
+.camp {
+  background-image: url("../img/home-basecamp.jpg");
+  flex-basis: 25%; }
+
+.backpack {
+  background-image: url("../img/home-backpacking.jpg");
+  flex-basis: 25%; }
+
+.canoe {
+  background-image: url("../img/home-canoe.jpg");
+  flex-basis: 25%; }
+
+.photography {
+  background-image: url("../img/home-photo.jpg");
+  flex-basis: 25%; }
+
+.custom {
+  background-image: url("../img/home-custom.jpg");
+  flex-basis: 50%; }
+
+.circle {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  background: rgba(52, 52, 52, 0.7);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: transform 2s, 0.2s; }
+  .circle img {
+    width: 50%; }
+  .circle:hover {
+    transform: scale(1.25);
+    z-index: 1; }
 
 /*# sourceMappingURL=output.css.map */

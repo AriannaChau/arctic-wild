@@ -1,8 +1,25 @@
-h1 {
+* {
+  font-family: Open Sans;
+}
+
+#logo {
   font-family: 'Lora';
   font-weight: lighter;
 }
 
+h1 {
+  font-family: 'Lora';
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
 h2 {
   font-family: 'Fjalla One';
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Fjalla One';
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }

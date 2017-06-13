@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 .main {
   display: flex;
   width: 100vw;
@@ -26,16 +28,6 @@
 
 }
 
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar ul li {
-  align-items: baseline;
-}
-
 #duck {
   height: 50px;
   width: 50px;
@@ -51,33 +43,91 @@ li {
   flex-flow: column wrap;
   align-items: center;
   h1 {
-    font-size: 150px;
+    font-size: 130px;
   }
 }
 
-#play-border {
-  width: 220px;
-  height: 5px;
-  background: white;
-  margin-bottom: 25px;
+.service-gallery {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.play {
-  background-color: rgba(255, 255, 255, 0.4);
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+.gallery {
+  position: relative;
+  height: 400px;
+  width: 200px;
   display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-basis: 2;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  color: white;
+  h2 {
+    align-self: flex-start;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+  span {
+    align-self: flex-start;
+    position: absolute;
+    bottom: 65px;
+    left: 30px;
+    height: 5px;
+    background-color: #dc7725;
+    width: 30px;
+  }
+}
+
+.raft {
+  background-image: url('../img/home-raft.jpg');
+  flex-basis: 50%;
+}
+
+.camp {
+  background-image: url('../img/home-basecamp.jpg');
+  flex-basis: 25%;
+}
+
+.backpack {
+  background-image: url('../img/home-backpacking.jpg');
+  flex-basis: 25%;
+}
+
+.canoe {
+  background-image: url('../img/home-canoe.jpg');
+  flex-basis: 25%;
+}
+
+.photography {
+  background-image: url('../img/home-photo.jpg');
+  flex-basis: 25%;
+}
+
+.custom {
+  background-image: url('../img/home-custom.jpg');
+  flex-basis: 50%;
+}
+
+.circle {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  background: rgba(52, 52, 52, .7);
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
-}
-
-#arrow {
-  height: 40px;
-  width: 40px;
-  margin-left: 5px;
-}
-
-.button {
-
+  transition: transform (2s, .2s);
+  img {
+    width: 50%;
+  }
+  &:hover {
+    transform: scale(1.25);
+    z-index: 1;
+  }
 }
